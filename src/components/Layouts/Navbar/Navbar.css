@@ -1,0 +1,46 @@
+nav{
+    background-color: #282c34;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+/* .navbar{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+} */
+.shop-name{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:24px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    gap: 50px;
+  }
+
+  .navbar-right a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  .navbar-right a:hover {
+    color: orange;
+  }
+
+  nav .active{
+    color: orange;
+  }
+  

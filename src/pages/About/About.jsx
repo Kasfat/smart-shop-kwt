@@ -5,8 +5,30 @@ import Team1 from "../../assets/images/team-1.jpg";
 import Team2 from "../../assets/images/team-2.jpg";
 import Team3 from "../../assets/images/team-3.jpg";
 import Banner from "../../components/Banner/Banner";
+import TeamMemberCard from "../../components/TeamMemberCard/TeamMemberCard";
 
 function About() {
+  const TeamMemberInfo = [
+    {
+      image: Team1,
+      name: "Walter White",
+      post: "Web Development",
+      desc: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    },
+    {
+      image: Team2,
+      name: "Sarah Jhinson",
+      post: "Marketing",
+      desc: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    },
+    {
+      image: Team3,
+      name: "William Anderson",
+      post: "Content",
+      desc: "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
+    },
+  ];
+
   return (
     <>
       <div className="about-section">
@@ -52,41 +74,7 @@ function About() {
           <div className="section-header">
             <h2> OUR TEAM</h2>
           </div>
-          <div className="team">
-            <div className="member">
-              <img src={Team1} />
-              <div className="member-content">
-                <h4>Walter White</h4>
-                <span>Web Development</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio
-                  veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-              </div>
-            </div>
-            <div className="member">
-              <img src={Team2} />
-              <div className="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio
-                  veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-              </div>
-            </div>
-            <div className="member">
-              <img src={Team3} />
-              <div className="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio
-                  veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-              </div>
-            </div>
-          </div>
+          <TeamMemberCard TeamMemberInfo={TeamMemberInfo}/>
         </div>
       </div>
     </>

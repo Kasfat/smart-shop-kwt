@@ -19,6 +19,7 @@ nav{
     font-weight: 600;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 
 }
 .navbar-left {

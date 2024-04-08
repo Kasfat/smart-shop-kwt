@@ -1,0 +1,42 @@
+.button {
+    display: flex; 
+    padding: 0.5rem 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.25rem; 
+    color: #000; 
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .button:hover {
+    border: 1px solid rgb(255, 106, 0);
+    color:rgb(255, 106, 0);
+  }
+
+  .pagination{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    justify-content: center; 
+    align-items: center; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+  }
+
+  .pagination-number{
+    display: flex;
+    gap: 6px;
+  }
+
+  .activePagination{
+    background-color: rgb(255, 106, 0);
+    color: #fff;
+    border-radius: 4px;
+    }
+    .activePagination .button{
+        color: white;
+    }
+   

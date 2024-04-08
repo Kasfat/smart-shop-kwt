@@ -1,6 +1,6 @@
 .products-card {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;

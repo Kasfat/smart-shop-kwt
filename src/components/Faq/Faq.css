@@ -1,0 +1,36 @@
+article{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 30px;
+
+  }
+  .faq{
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #292b2c;
+    cursor: pointer;
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question h3{
+    font-size: 24px;
+  }
+  .question img{
+    width: 36px;
+    height: 30px;
+  }
+
+  .answer p{
+    padding-top: 16px;
+    font-size: 20px;
+  }
+  .rotate{
+    transform : rotate(180deg);
+  }

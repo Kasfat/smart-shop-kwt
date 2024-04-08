@@ -1,0 +1,39 @@
+.products-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card {
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.05); /* Scale up by 10% */
+  transition: all 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+}
+.card .product-info{
+  margin-top: 1rem;
+  color: #0f2b60;
+}
+.card .product-title {
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card .product-title:hover {
+  color: #108EE9;
+}
+
+.card .product-price-rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

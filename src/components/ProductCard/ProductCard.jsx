@@ -11,7 +11,7 @@ const ProductCard = ({ data }) => {
         <h3 className="product-title">{data.title}</h3>
         <h4 className="product-price-rating">
           Price: ${data.price}{" "}
-          <span style={{ marginLeft: "20px" }}>⭐{data.rating}</span>
+          <span>⭐{data.rating}</span>
         </h4>
       </div>
     </div>

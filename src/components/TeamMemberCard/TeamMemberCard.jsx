@@ -1,19 +1,15 @@
 import React from "react";
+import "./TeamMemberCard.css";
 
-const TeamMemberCard = ({ TeamMemberInfo }) => {
-  console.log(TeamMemberInfo);
+const TeamMemberCard = ({ data }) => {
   return (
-    <div className="team">
-      {TeamMemberInfo.map((value, index) => (
-        <div className="member" key={index}>
-          <img src={value.image} />
-          <div className="member-content">
-            <h4>{value.name}</h4>
-            <span>{value.post}</span>
-            <p>{value.desc}</p>
-          </div>
-        </div>
-      ))}
+    <div className="member">
+      <img src={data.image} />
+      <div className="member-content">
+        <h4>{data.name}</h4>
+        <span>{data.post}</span>
+        <p>{data.desc}</p>
+      </div>
     </div>
   );
 };

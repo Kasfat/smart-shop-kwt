@@ -1,14 +1,18 @@
 .product-section {
-    background-color: #fcfaed;
-   
-  }
- 
+  background-color: #fcfaed;
+}
 
-  .product-list{
-    display: flex;
-    flex-direction: column;
-    gap: 4;
-    margin: 0px 60px;
-    padding: 30px 20px;
-
-  }
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4;
+  margin: 0px 60px;
+  padding: 30px 20px;
+}
+.products-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

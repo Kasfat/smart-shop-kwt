@@ -9,13 +9,13 @@ const Products = () => {
   const [productsData, setProductaData] = useState([]);
   const [isError, setIsError] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(1);
-  const productShowPerPage = 10;
+  const [limit, setLimit] = useState(20);
+  const [skip, setSkip] = useState(0);
 
   const getProductsData = async () => {
     try {
-      const res = await ApiData.get("/products");
-      setProductaData(res.data.products);
+      const res = await ApiData.get(`/products?limit=${limit}&skip=${skip}`);
+      setProductaData(res.data);
       setIsLoading(false);
     } catch (error) {
       setIsError(error.message);
@@ -25,10 +25,10 @@ const Products = () => {
 
   useEffect(() => {
     getProductsData();
-  }, [currentPage, productShowPerPage]);
+  }, [limit, skip]);
 
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    setSkip(pageNumber * limit - 20);
   };
 
   return (
@@ -50,16 +50,16 @@ const Products = () => {
         <div>Error: {isError}</div>
       ) : (
         <div className="product-list">
-          <ProductCard
-            productsData={productsData}
-            currentPage={currentPage}
-            productShowPerPage={productShowPerPage}
-          />
+          <div className="products-card">
+            {productsData.products.map((data) => (
+              <ProductCard data={data} key={data.id} />
+            ))}
+          </div>
+
           <Pagination
             handlePageChange={handlePageChange}
-            currentPage={currentPage}
             productsData={productsData}
-            productShowPerPage={productShowPerPage}
+            limit={limit}
           />
         </div>
       )}

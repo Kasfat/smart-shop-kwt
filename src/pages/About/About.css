@@ -43,8 +43,41 @@ h2 {
   margin: 5px auto;
 }
 .team {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 40px 60px;
   gap: 20px;
+}
+
+
+/*** For Responsive Design ***/
+
+@media (max-width: 1024px){
+  .aboutBody{
+    flex-direction: column-reverse;
+    padding: 20px 30px;
+    gap: 10px;
+  }
+  .aboutBody-left h1{
+    text-align: center;
+  }
+  .aboutBody-left p{
+    margin-right: 0px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px){
+  .team {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+  }
+}
+@media (max-width: 500px){
+  .team {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+  }
 }
 

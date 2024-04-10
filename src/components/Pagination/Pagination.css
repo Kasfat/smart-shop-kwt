@@ -39,4 +39,12 @@
     .activePagination .button{
         color: white;
     }
+
+    /*** For Responsive Design ***/
+
+    @media (max-width: 480px){
+      .button{
+        padding: 0 .5rem; 
+      }
+    }
    

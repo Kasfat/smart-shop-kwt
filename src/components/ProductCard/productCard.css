@@ -8,7 +8,7 @@
   transition: all 0.3s ease-in-out;
 }
 .card .card-img{
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 .card .card-img img{
@@ -17,8 +17,8 @@
   object-fit: contain;
 }
 .card:hover{
-  transform: scale(1.05); /* Scale up by 10% */
-  transition: all 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+  transform: scale(1.05); 
+  transition: all 0.3s ease-in-out; 
 }
 .card .product-info{
   margin-top: 1rem;
@@ -39,4 +39,5 @@
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
+  margin: 10px auto;
 }

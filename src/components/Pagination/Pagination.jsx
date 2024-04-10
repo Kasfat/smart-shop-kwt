@@ -4,7 +4,6 @@ import "./Pagination.css";
 const Pagination = ({ handlePageChange, limit, productsData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPage = Math.ceil(productsData.total / limit);
-  console.log(totalPage);
   const renderPaginationLink = () => {
     return Array.from({ length: totalPage }, (_, i) => i + 1).map(
       (pageNumber) => (

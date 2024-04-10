@@ -2,7 +2,6 @@ import React from "react";
 import './Banner.css'
 
 const Banner = (props) => {
-  console.log(props);
   const { className, title, desc } = props;
   return (
     <div className={className}>

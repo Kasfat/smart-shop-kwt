@@ -53,6 +53,9 @@ nav{
     .navbar-right{
       display: none !important;
     }
+    nav .active{
+      color: orange !important;
+    }
     .mobile-navbar-right {
       display: block;
     }
